@@ -98,7 +98,7 @@ AdPrompts are a simple ad unit designed to have a native feel. When the user acc
 SKAdsRequest *request = [SKAdsRequest requestWithAdZone:@"**YOUR ZONE ID**"];
 SKAdsAdPrompt *prompt = [[SKAdsAdPrompt alloc] initWithRequest:request];
 [prompt showAsAlert];
-```objective-c
+```
 
 
 
