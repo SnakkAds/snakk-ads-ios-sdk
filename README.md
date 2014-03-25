@@ -19,7 +19,7 @@ Installation
 
 The following frameworks are required:
 
-````
+```objective-c
 SystemConfiguration.framework
 QuartsCore.framework
 CoreTelephony.framework
@@ -32,22 +32,22 @@ MediaPlayer.framework
 AudioToolbox.framework
 AdSupport.framework - enable support for IDFA
 StoreKit.framework - enable use of SKStoreProductViewController, displays app store ads without leaving your app
-````
+```
 
 **In the Build Settings for your target, you must include the following "Other Linker Flags:" -ObjC**
 
 The following frameworks are optional:
 
-````
+```objective-c
 CoreLocation.framework
-````
+```
 CoreLocation is optional and is used for geo-targeting ads.  Apple mandates that your app have a good reason for enabling Location services and will deny your app if location is not a core feature for your app.
 
 The following bundles are required:
 
-````
+```objective-c
 SKAds.bundle
-````
+```
 
 SKAds.bundle includes files needed for media-rich advertisements that make use of device specific features. It is included with this sample app.
 
@@ -61,7 +61,7 @@ The Snakk Ads SDK allows developers to serve many types of ads, including banner
 
 ### Banner Usage
 
-~~~~
+```objective-c
 // In your .h file:
 #import <SnakkAds/SKAdsBannerAdView.h>
 @property (retain, nonatomic) SKAdsBannerAdView *skAd;
@@ -83,7 +83,7 @@ skAd = [[SKAdsBannerAdView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
 // To hide and cancel ads: 
 [self.skAd hide];
 [self.skAd cancelAds];
-~~~~
+```
 
 
 
@@ -91,14 +91,14 @@ skAd = [[SKAdsBannerAdView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
 
 AdPrompts are a simple ad unit designed to have a native feel. When the user accepts the option to download an app, song or video, they will be taken to the app store.
 
-~~~~
+```objective-c
 // In your .m file:
 #import <SnakkAds/SKAdsAdPrompt.h>
 ...
 SKAdsRequest *request = [SKAdsRequest requestWithAdZone:@"**YOUR ZONE ID**"];
 SKAdsAdPrompt *prompt = [[SKAdsAdPrompt alloc] initWithRequest:request];
 [prompt showAsAlert];
-~~~~
+```objective-c
 
 
 
@@ -106,7 +106,7 @@ SKAdsAdPrompt *prompt = [[SKAdsAdPrompt alloc] initWithRequest:request];
 
 #### Show Modally
 
-~~~~
+```objective-c
 // In your .h file:
 #import <SnakkAds/SKAdsInterstitialAd.h>
 ...
@@ -129,12 +129,12 @@ SKAdsRequest *request = [SKAdsRequest requestWithAdZone:@"**YOUR ZONE ID**"];
     // Ad is ready for display... show it!
     [self.interstitialAd presentFromViewController:self];
 }
-~~~~
+```
 
 
 #### Include in Paged Navigation
     
-~~~~
+```objective-c
 @property (retain, nonatomic) SKInterstitialAd *interstitialAd;
 
 ...
@@ -150,28 +150,28 @@ SKAdsRequest *request = [SKAdsRequest requestWithAdZone:@"**YOUR ZONE ID**"];
 if( self.interstitialAd.isLoaded ) {
     [self.interstitialAd presentInView:self.view];
 }
-~~~~
+```
 
 ### Video Ads Usage
 
 When requesting a video ad from the server, a TVASTAdsRequest object must be instantiated and its zoneId parameter specified. This parameter is required for a successful retrieval of the ad.
 
-~~~~    
+```objective-c
     // Create an adsRequest object and request ads from the ad server with your own ZONE_ID
     TVASTAdsRequest *request = [TVASTAdsRequest requestWithAdZone:**YOUR ZONE ID**;
     [_videoAd requestAdsWithRequestObject:request];
-~~~~
+```
 
 If you want to specify the type of video ad you are requesting, use the call below.
 
-~~~~    
+```objective-c 
     TVASTAdsRequest *request = [TVASTAdsRequest requestWithAdZone:**YOUR ZONE ID**];
     [_videoAd requestAdsWithRequestObject:request andVideoType:SKAdsVideoTypeMidroll];
-~~~~
+```
 
 (Essentially, what needs to be included in the code is as follows:)
 
-~~~~
+```objective-c
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -220,13 +220,13 @@ If you want to specify the type of video ad you are requesting, use the call bel
 - (void)skVideoInterstitialAdDidFail:(SKAdsVideoInterstitialAd *)videoAd withErrorString:(NSString *)error {
     NSLog(@"%@", error);
 }
-~~~~
+```
 
 ### Listen for Location Updates
 
 If you want to allow for geo-targeting, listen for location updates:
 
-~~~~
+```objective-c
 @property (retain, nonatomic) CLLocationManager *locationManager;
 
 ...
@@ -247,4 +247,4 @@ self.locationManager.delegate = self;
 
 // To stop monitoring location when complete to conserve battery life:
 [self.locationManager stopMonitoringSignificantLocationChanges];
-~~~~
+```
