@@ -13,8 +13,8 @@
 
 @interface SnakkAdsVideoExampleViewController : UIViewController<SKAdsVideoInterstitialAdDelegate>
 
-@property (nonatomic, retain) IBOutlet UIButton     *adRequestButton;
 @property (nonatomic, retain) SKAdsVideoInterstitialAd *videoAd;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorWebView;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
-- (IBAction)onRequestAds;
 @end

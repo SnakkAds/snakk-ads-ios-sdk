@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Snakk Ads Banner Example View Controller - Banner-->
+        <!--Snakk Ads Banner Example View Controller - 720 x 90-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="SnakkAdsBannerExampleViewController" sceneMemberID="viewController">
@@ -14,26 +14,57 @@
                         <viewControllerLayoutGuide type="bottom" id="fak-ua-fT3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQr-d4-Ar2">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                                <items/>
-                            </toolbar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cDg-qh-yyw">
+                                <rect key="frame" x="0.0" y="20" width="768" height="855"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="PH3-Gr-h0B"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="OEs-FE-WgH">
+                                <rect key="frame" x="366" y="469" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="XWJ-Rl-JvV"/>
+                                    <constraint firstAttribute="width" constant="37" id="tsM-5b-ldk"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LnX-FC-9Cr">
+                                <rect key="frame" x="374" y="929" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="kdG-EC-qUW"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iQr-d4-Ar2" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="8qp-4k-ywN"/>
-                            <constraint firstItem="iQr-d4-Ar2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="9hT-Pl-9vo"/>
-                            <constraint firstItem="iQr-d4-Ar2" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" id="GCv-eZ-Lr1"/>
+                            <constraint firstAttribute="trailing" secondItem="LnX-FC-9Cr" secondAttribute="trailing" constant="374" id="0uq-Xc-ICL"/>
+                            <constraint firstAttribute="centerY" secondItem="OEs-FE-WgH" secondAttribute="centerY" id="4PA-Yk-zsu"/>
+                            <constraint firstItem="LnX-FC-9Cr" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="374" id="X4K-ve-I9i"/>
+                            <constraint firstAttribute="centerX" secondItem="OEs-FE-WgH" secondAttribute="centerX" id="Yxg-9c-Kxr"/>
+                            <constraint firstItem="fak-ua-fT3" firstAttribute="top" secondItem="LnX-FC-9Cr" secondAttribute="bottom" constant="26" id="bdL-6j-qrB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Banner" image="first" id="acW-dT-cKf"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="720 x 90" image="tab_standard.png" id="acW-dT-cKf"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="activityIndicatorAd" destination="LnX-FC-9Cr" id="JLH-zl-jka"/>
+                        <outlet property="activityIndicatorWebView" destination="OEs-FE-WgH" id="bnE-WB-Rb4"/>
+                        <outlet property="webView" destination="cDg-qh-yyw" id="m6J-fW-PCo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3041" y="150"/>
+            <point key="canvasLocation" x="-995" y="380"/>
         </scene>
         <!--Snakk Ads Interstitial Example View Controller - Interstitial-->
         <scene sceneID="wg7-f3-ORb">
@@ -44,7 +75,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3gL-kL-JHf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ej5-n5-O85">
@@ -53,50 +84,47 @@
                                     <navigationItem id="WaP-O7-m87"/>
                                 </items>
                             </navigationBar>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="X3T-zq-vNG">
-                                <rect key="frame" x="383" y="597" width="20" height="20"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoq-hF-xc6">
+                                <rect key="frame" x="0.0" y="20" width="768" height="955"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="sy5-K4-peg"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cyf-gH-GWc">
+                                <rect key="frame" x="366" y="469" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="9IG-va-YeV"/>
+                                    <constraint firstAttribute="height" constant="37" id="RFK-5a-rLq"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQ9-w2-Lr2" userLabel="Button - Show Interstitial">
-                                <rect key="frame" x="320" y="474" width="123" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Show Interstitial">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showInterstitial:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="C3h-QX-4DQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyb-0X-iNn" userLabel="Button - Load Interstitial">
-                                <rect key="frame" x="320" y="408" width="127" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Load Interstitial">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loadInterstitial:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="BTU-7Q-ApP"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="cyf-gH-GWc" secondAttribute="centerY" id="13B-6q-Mc4"/>
+                            <constraint firstItem="qoq-hF-xc6" firstAttribute="top" secondItem="TWL-FJ-ebd" secondAttribute="bottom" id="58M-Aa-qbN"/>
                             <constraint firstItem="ej5-n5-O85" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailing" id="C9p-N0-R4o"/>
+                            <constraint firstItem="qoq-hF-xc6" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="OzT-fQ-t1S"/>
                             <constraint firstItem="ej5-n5-O85" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="ZQW-8Y-bT4"/>
+                            <constraint firstItem="3gL-kL-JHf" firstAttribute="top" secondItem="qoq-hF-xc6" secondAttribute="bottom" id="azB-8R-oY5"/>
                             <constraint firstItem="ej5-n5-O85" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="dYc-7R-70W"/>
+                            <constraint firstAttribute="trailing" secondItem="qoq-hF-xc6" secondAttribute="trailing" id="heq-6j-Ixe"/>
+                            <constraint firstAttribute="centerX" secondItem="cyf-gH-GWc" secondAttribute="centerX" id="v9X-js-kN6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Interstitial" image="second" id="cPa-gy-q4n"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Interstitial" image="tab_interstitial.png" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="X3T-zq-vNG" id="oDF-4f-Foh"/>
-                        <outlet property="loadButton" destination="Cyb-0X-iNn" id="fby-2y-XDC"/>
-                        <outlet property="showButton" destination="GQ9-w2-Lr2" id="3f2-4D-K4d"/>
+                        <outlet property="activityIndicatorWebView" destination="cyf-gH-GWc" id="CNC-1J-dQg"/>
+                        <outlet property="webView" destination="qoq-hF-xc6" id="614-0n-zbq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3042" y="1284"/>
+            <point key="canvasLocation" x="967" y="380"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -110,6 +138,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="4Z3-UT-vBh" kind="relationship" relationship="viewControllers" id="LRt-rO-phf"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="SWD-D5-jcF" kind="relationship" relationship="viewControllers" id="8i6-zm-Zdo"/>
                         <segue destination="Spt-BH-TO7" kind="relationship" relationship="viewControllers" id="aFg-jP-2Q7"/>
@@ -117,7 +146,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="718"/>
+            <point key="canvasLocation" x="967" y="-1202"/>
         </scene>
         <!--Snakk Ads Ad Prompt Example View Controller - Ad Prompt-->
         <scene sceneID="1kX-gj-p3p">
@@ -128,53 +157,47 @@
                         <viewControllerLayoutGuide type="bottom" id="9Rt-tg-K0e"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Vhc-p5-xUf">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-Ei-Rs9">
-                                <rect key="frame" x="362" y="471" width="46" height="30"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gQ-CS-jjT">
+                                <rect key="frame" x="0.0" y="17" width="768" height="958"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Popup">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="showAdPrompt:" destination="SWD-D5-jcF" eventType="touchUpInside" id="g62-uZ-fSf"/>
+                                    <outlet property="delegate" destination="SWD-D5-jcF" id="UJK-rN-jtK"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l4-3c-jhb">
-                                <rect key="frame" x="328" y="574" width="111" height="30"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YNJ-Az-k2P">
+                                <rect key="frame" x="366" y="469" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Simple Example">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="simpleExample:" destination="SWD-D5-jcF" eventType="touchUpInside" id="ROD-2a-QIf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw7-lX-fqf">
-                                <rect key="frame" x="356" y="420" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pre-load">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="preLoadAdPrompt:" destination="SWD-D5-jcF" eventType="touchUpInside" id="TI9-V6-vcx"/>
-                                </connections>
-                            </button>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="7DX-j6-WNi"/>
+                                    <constraint firstAttribute="height" constant="37" id="S4O-Zv-XPF"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0gQ-CS-jjT" secondAttribute="trailing" id="AX5-uX-6bK"/>
+                            <constraint firstAttribute="centerY" secondItem="YNJ-Az-k2P" secondAttribute="centerY" id="Drv-T9-3S5"/>
+                            <constraint firstItem="0gQ-CS-jjT" firstAttribute="leading" secondItem="Vhc-p5-xUf" secondAttribute="leading" id="M6D-7v-vgQ"/>
+                            <constraint firstAttribute="centerX" secondItem="YNJ-Az-k2P" secondAttribute="centerX" id="Xdt-gb-Ok2"/>
+                            <constraint firstItem="9Rt-tg-K0e" firstAttribute="top" secondItem="0gQ-CS-jjT" secondAttribute="bottom" id="f1a-7s-UPh"/>
+                            <constraint firstItem="0gQ-CS-jjT" firstAttribute="top" secondItem="Vhc-p5-xUf" secondAttribute="top" constant="17" id="sY0-d0-rBv"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ad Prompt" image="third" id="Niq-Y9-1ry"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Ad Prompt" image="tab_adprompt.png" id="Niq-Y9-1ry"/>
                     <connections>
-                        <outlet property="preloadButton" destination="Aw7-lX-fqf" id="Mju-bz-fri"/>
+                        <outlet property="activityIndicatorWebView" destination="YNJ-Az-k2P" id="tQL-SQ-6Af"/>
+                        <outlet property="webView" destination="0gQ-CS-jjT" id="TK4-1r-fNq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKn-xh-hvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="190" y="925"/>
+            <point key="canvasLocation" x="1966" y="380"/>
         </scene>
         <!--Snakk Ads Video Example-->
         <scene sceneID="4dE-qP-rAo">
@@ -185,36 +208,113 @@
                         <viewControllerLayoutGuide type="bottom" id="HNp-UT-GRz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="VHp-Gr-783">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFS-BO-KGc">
-                                <rect key="frame" x="332" y="225" width="105" height="30"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiU-xi-Ime">
+                                <rect key="frame" x="0.0" y="20" width="768" height="955"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Request Ad">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="onRequestAds" destination="Spt-BH-TO7" eventType="touchUpInside" id="cHO-xQ-m5T"/>
+                                    <outlet property="delegate" destination="Spt-BH-TO7" id="OKh-n0-s4V"/>
                                 </connections>
-                            </button>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="PPR-UG-qCl">
+                                <rect key="frame" x="366" y="469" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="M4F-qz-Vhd"/>
+                                    <constraint firstAttribute="height" constant="37" id="kLr-cL-480"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FiU-xi-Ime" firstAttribute="leading" secondItem="VHp-Gr-783" secondAttribute="leading" id="IFY-H3-830"/>
+                            <constraint firstAttribute="centerY" secondItem="PPR-UG-qCl" secondAttribute="centerY" id="lFz-fX-QuD"/>
+                            <constraint firstAttribute="centerX" secondItem="PPR-UG-qCl" secondAttribute="centerX" id="otp-ZU-FJz"/>
+                            <constraint firstAttribute="trailing" secondItem="FiU-xi-Ime" secondAttribute="trailing" id="uJ0-xx-GC4"/>
+                            <constraint firstItem="FiU-xi-Ime" firstAttribute="top" secondItem="qMg-I8-taJ" secondAttribute="bottom" id="vOs-BJ-F7o"/>
+                            <constraint firstItem="HNp-UT-GRz" firstAttribute="top" secondItem="FiU-xi-Ime" secondAttribute="bottom" id="wWG-Zm-dcR"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Video" image="fourth" id="UmJ-an-gT2"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="VAST Video" image="tab_video.png" id="UmJ-an-gT2"/>
                     <connections>
-                        <outlet property="adRequestButton" destination="JFS-BO-KGc" id="Cw6-Rs-btP"/>
+                        <outlet property="activityIndicatorWebView" destination="PPR-UG-qCl" id="dHy-MC-RTC"/>
+                        <outlet property="webView" destination="FiU-xi-Ime" id="LcQ-B9-3gX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPj-fJ-oZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2953" y="380"/>
+        </scene>
+        <!--Snakk Ads Banner Square Example View Controller - 300 x 250-->
+        <scene sceneID="PpF-nc-mWa">
+            <objects>
+                <viewController id="4Z3-UT-vBh" customClass="SnakkAdsBannerSquareExampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v0Q-Kd-2ge"/>
+                        <viewControllerLayoutGuide type="bottom" id="oCr-gj-MAi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ffm-td-hT6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-30-LGq">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <items/>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2d9-TH-DKt">
+                                <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4Z3-UT-vBh" id="eOV-rJ-Efm"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="nwB-Zq-AMh">
+                                <rect key="frame" x="366" y="469" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="hKK-Qq-126"/>
+                                    <constraint firstAttribute="width" constant="37" id="pZJ-28-i0A"/>
+                                </constraints>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oCr-gj-MAi" firstAttribute="top" secondItem="2d9-TH-DKt" secondAttribute="bottom" id="2Xo-XK-7k6"/>
+                            <constraint firstItem="2d9-TH-DKt" firstAttribute="top" secondItem="v0Q-Kd-2ge" secondAttribute="bottom" id="JP8-Ef-JLF"/>
+                            <constraint firstAttribute="centerY" secondItem="nwB-Zq-AMh" secondAttribute="centerY" id="RNF-e9-neq"/>
+                            <constraint firstItem="y4N-30-LGq" firstAttribute="leading" secondItem="Ffm-td-hT6" secondAttribute="leading" id="T8H-gV-36N"/>
+                            <constraint firstAttribute="trailing" secondItem="2d9-TH-DKt" secondAttribute="trailing" id="W23-3p-l0H"/>
+                            <constraint firstAttribute="centerX" secondItem="nwB-Zq-AMh" secondAttribute="centerX" id="Wm3-yk-7ht"/>
+                            <constraint firstItem="2d9-TH-DKt" firstAttribute="leading" secondItem="Ffm-td-hT6" secondAttribute="leading" id="ZL7-Ss-MKg"/>
+                            <constraint firstItem="y4N-30-LGq" firstAttribute="top" secondItem="Ffm-td-hT6" secondAttribute="top" id="ddW-IY-G6j"/>
+                            <constraint firstItem="y4N-30-LGq" firstAttribute="trailing" secondItem="Ffm-td-hT6" secondAttribute="trailing" id="xNl-Gv-AHd"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="300 x 250" image="tab_richmedia.png" id="fwT-yz-NRh"/>
+                    <connections>
+                        <outlet property="activityIndicatorWebView" destination="nwB-Zq-AMh" id="NU1-lf-xa0"/>
+                        <outlet property="webView" destination="2d9-TH-DKt" id="7yj-Tm-t5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uva-q0-8sL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="380"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="fourth" width="24" height="16"/>
-        <image name="second" width="30" height="30"/>
-        <image name="third" width="22" height="22"/>
+        <image name="tab_adprompt.png" width="50" height="50"/>
+        <image name="tab_interstitial.png" width="50" height="50"/>
+        <image name="tab_richmedia.png" width="50" height="50"/>
+        <image name="tab_standard.png" width="50" height="50"/>
+        <image name="tab_video.png" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>

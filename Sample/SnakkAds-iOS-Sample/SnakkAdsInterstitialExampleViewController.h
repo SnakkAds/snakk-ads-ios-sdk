@@ -18,13 +18,9 @@ enum {
 typedef NSUInteger ButtonState;
 
 @interface SnakkAdsInterstitialExampleViewController : UIViewController<SKAdsInterstitialAdDelegate>
-@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (retain, nonatomic) IBOutlet UIButton *loadButton;
-@property (retain, nonatomic) IBOutlet UIButton *showButton;
-@property (retain, nonatomic) SKAdsInterstitialAd *interstitialAd;
 
-- (void)updateUIWithState:(ButtonState)state;
-- (IBAction)loadInterstitial:(id)sender;
-- (IBAction)showInterstitial:(id)sender;
+@property (retain, nonatomic) SKAdsInterstitialAd *interstitialAd;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorWebView;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end

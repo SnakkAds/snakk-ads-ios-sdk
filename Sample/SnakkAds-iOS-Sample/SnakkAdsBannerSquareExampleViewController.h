@@ -1,5 +1,5 @@
 //
-//  SnakkAdsFirstViewController.h
+//  SnakkAdsBannerSquareExampleViewController.h
 //  SnakkAds-iOS-Sample
 //
 //  Created by Carl Zornes on 12/2/13.
@@ -10,11 +10,10 @@
 #import <CoreLocation/CoreLocation.h>
 #import <SnakkAds/SKAdsBannerAdView.h>
 
-@interface SnakkAdsBannerExampleViewController : UIViewController<SKAdsBannerAdViewDelegate>
+@interface SnakkAdsBannerSquareExampleViewController : UIViewController<SKAdsBannerAdViewDelegate>
 
 @property (retain, nonatomic) SKAdsBannerAdView *skAd;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorAd;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorWebView;
 
 @end

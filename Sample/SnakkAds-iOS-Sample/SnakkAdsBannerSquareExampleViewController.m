@@ -1,5 +1,5 @@
 //
-//  SnakkAdsFirstViewController.m
+//  SnakkAdsBannerSquareExampleViewController.h
 //  SnakkAds-iOS-Sample
 //
 //  Created by Carl Zornes on 12/2/13.
@@ -7,22 +7,23 @@
 //
 
 #import "SnakkAdsAppDelegate.h"
-#import "SnakkAdsBannerExampleViewController.h"
+#import "SnakkAdsBannerSquareExampleViewController.h"
 #import <SnakkAds/SKAds.h>
 #import "SnakkScreenHelper.h"
 
 //*************************************
 // Replace with your valid ZONE_ID here.
-#define ZONE_ID_IPHONE @"50953" // for example use only, don't use this zone in your app!
-#define ZONE_ID_IPAD @"50973" // for example use only, don't use this zone in your app!
-#define C_ID_IPHONE @"312007" // for example use only, don't use this zone in your app!
-#define C_ID_IPAD @"312023" // for example use only, don't use this zone in your app!
+#define ZONE_ID_IPHONE @"50955"
+#define ZONE_ID_IPAD @"50977"
+#define C_ID_IPHONE @"312009"
+#define C_ID_IPAD @"312025"
 
-@interface SnakkAdsBannerExampleViewController ()<UIWebViewDelegate>
+
+@interface SnakkAdsBannerSquareExampleViewController () <UIWebViewDelegate>
 
 @end
 
-@implementation SnakkAdsBannerExampleViewController
+@implementation SnakkAdsBannerSquareExampleViewController
 @synthesize skAd;
 
 - (void)initBannerAdvanced {
@@ -30,9 +31,10 @@
     if (!skAd) {
         // don't re-define if we used IB to init the banner...
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-            skAd = [[SKAdsBannerAdView alloc] initWithFrame:CGRectMake(20, [UIScreen mainScreen].bounds.size.height - 45 - 90 - [SnakkScreenHelper iOSTabBarOffset], 728, 90)];
+            skAd = [[SKAdsBannerAdView alloc] initWithFrame:CGRectMake(768-300, [UIScreen mainScreen].bounds.size.height - 49 - 250 - [SnakkScreenHelper iOSTabBarOffset], 300, 250)];
         } else {
-            skAd = [[SKAdsBannerAdView alloc] initWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 45 - 50 - [SnakkScreenHelper iOSTabBarOffset], 320, 50)];
+            skAd = [[SKAdsBannerAdView alloc] initWithFrame:CGRectMake(10, [UIScreen mainScreen].bounds.size.height - 45 - 250 - [SnakkScreenHelper iOSTabBarOffset], 300, 250)];
+          //  skAd.clipsToBounds = YES;
         }
         
         [self.view addSubview:self.skAd];
@@ -40,7 +42,7 @@
     
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     [self willRotateToInterfaceOrientation:interfaceOrientation duration:0];
-    
+
     self.skAd.delegate = self;
     self.skAd.showLoadingOverlay = YES;
     
@@ -85,37 +87,28 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     // notify banner of orientation changes
     [self.skAd repositionToInterfaceOrientation:toInterfaceOrientation];
     if (toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)
     {
-        CGFloat xPos = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [UIScreen mainScreen].bounds.size.width / 2 - 364 : [UIScreen mainScreen].bounds.size.width / 2 - 160;
-        CGFloat yPos = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [UIScreen mainScreen].bounds.size.height - 45 - 90 - [SnakkScreenHelper iOSTabBarOffset] : [UIScreen mainScreen].bounds.size.height - 45 - 50 - [SnakkScreenHelper iOSTabBarOffset];
-        skAd.frame = ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? CGRectMake(xPos, yPos, 728, 90) : CGRectMake(xPos, yPos, 320, 50));
+        CGFloat xPos = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [UIScreen mainScreen].bounds.size.width - 300 : [UIScreen mainScreen].bounds.size.width / 2 - 150;
+        CGFloat yPos = [UIScreen mainScreen].bounds.size.height - 45 - 250 - [SnakkScreenHelper iOSTabBarOffset];
+        skAd.frame = CGRectMake(xPos, yPos, 300, 250);
     }
     else
     {
-        CGFloat xPos = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [UIScreen mainScreen].bounds.size.height / 2 - 364 : [UIScreen mainScreen].bounds.size.height / 2 - 160;
-        CGFloat yPos = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [UIScreen mainScreen].bounds.size.width - 45 - 90 - [SnakkScreenHelper iOSTabBarOffset] : [UIScreen mainScreen].bounds.size.width - 45 - 50 - [SnakkScreenHelper iOSTabBarOffset];
-        skAd.frame = ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? CGRectMake(xPos, yPos, 728, 90) : CGRectMake(xPos , yPos, 320, 50));
+        CGFloat xPos = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [UIScreen mainScreen].bounds.size.height - 300 : [UIScreen mainScreen].bounds.size.height / 2 - 150;
+        CGFloat yPos = [UIScreen mainScreen].bounds.size.width - 45 - 250 - [SnakkScreenHelper iOSTabBarOffset];
+        skAd.frame = CGRectMake(xPos, yPos, 300, 250);
     }
 }
 
-#pragma mark -
-#pragma mark UIWebViewDelegate methods
--(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    [self.activityIndicatorWebView stopAnimating];
-}
 
--(void)webViewDidFinishLoad:(UIWebView *)webView{
-    [self.activityIndicatorWebView stopAnimating];
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark -
@@ -129,14 +122,12 @@
     NSLog(@"Banner has been loaded...");
     // Banner view will display automatically if docking is enabled
     // if disabled, you'll want to show bannerView
-    [self.activityIndicatorAd stopAnimating];
 }
 
 - (void)skBannerAdView:(SKAdsBannerAdView *)bannerView didFailToReceiveAdWithError:(NSError *)error {
     NSLog(@"Banner failed to load with the following error: %@", error);
     // Banner view will hide automatically if docking is enabled
     // if disabled, you'll want to hide bannerView
-   [self.activityIndicatorAd stopAnimating];
 }
 
 - (BOOL)skBannerAdViewActionShouldBegin:(SKAdsBannerAdView *)bannerView willLeaveApplication:(BOOL)willLeave {
@@ -154,5 +145,15 @@
 - (void)skBannerAdViewActionDidFinish:(SKAdsBannerAdView *)bannerView {
     NSLog(@"Banner is done covering your app, back to normal!");
     // resume normal app functions
+}
+
+#pragma mark -
+#pragma mark UIWebViewDelegate
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [self.activityIndicatorWebView stopAnimating];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [self.activityIndicatorWebView stopAnimating];
 }
 @end

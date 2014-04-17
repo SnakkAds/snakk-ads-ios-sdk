@@ -12,45 +12,47 @@
 
 //*************************************
 // Replace with your valid ZONE_ID here.
-#define ZONE_ID @"7271" // for example use only, don't use this zone in your app!
+#define ZONE_ID_IPHONE @"50957"
+#define ZONE_ID_IPAD @"50979"
+#define C_ID_IPHONE @"312009"
+#define C_ID_IPAD @"312025"
 
-@interface SnakkAdsInterstitialExampleViewController ()
-
+@interface SnakkAdsInterstitialExampleViewController ()<UIWebViewDelegate>
+@property BOOL isShowingInterstitial;
 @end
 
 @implementation SnakkAdsInterstitialExampleViewController
 
-@synthesize activityIndicator;
-@synthesize loadButton;
-@synthesize showButton;
+
 @synthesize interstitialAd;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [showButton setHidden:TRUE];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.hapticgeneration.com.au"]]];
 }
 
-- (void)updateUIWithState:(ButtonState)state {
-    [loadButton setEnabled:(state != StateLoading)];
-    [showButton setHidden:(state != StateReady)];
-    [activityIndicator setHidden:(state != StateLoading)];
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    if (!self.isShowingInterstitial){
+        [self loadInterstitial];
+        self.isShowingInterstitial = YES;
+    }
 }
 
-- (IBAction)loadInterstitial:(id)sender {
+
+- (void)loadInterstitial{
     self.interstitialAd = [[SKAdsInterstitialAd alloc] init];
     self.interstitialAd.delegate = self;
     self.interstitialAd.animated = YES;
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
-    //                            @"test", @"mode", // enable test mode to test banner ads in your app
-                            nil];
-    SKAdsRequest *request = [SKAdsRequest requestWithAdZone:ZONE_ID andCustomParameters:params];
+  
+    NSString * zoneID = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? ZONE_ID_IPAD : ZONE_ID_IPHONE;
+    NSString * cID = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? C_ID_IPAD : C_ID_IPHONE;
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: cID, @"cid", nil];
+    SKAdsRequest *request = [SKAdsRequest requestWithAdZone:zoneID andCustomParameters:params];
     SnakkAdsAppDelegate *myAppDelegate = (SnakkAdsAppDelegate *)([[UIApplication sharedApplication] delegate]);
     [request updateLocation:myAppDelegate.locationManager.location];
     [self.interstitialAd loadInterstitialForRequest:request];
-}
-
-- (IBAction)showInterstitial:(id)sender {
-    [self.interstitialAd presentFromViewController:self];
 }
 
 #pragma mark -
@@ -60,13 +62,11 @@
     NSLog(@"Error: %@", error.localizedDescription);
     UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error showing Interstitial" message:error.localizedDescription delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
-    [self updateUIWithState:StateError];
 }
 
 - (void)skInterstitialAdDidUnload:(SKAdsInterstitialAd *)interstitialAd {
     NSLog(@"Ad did unload");
     self.interstitialAd = nil; // don't reuse interstitial ad!
-    [self updateUIWithState:StateNone];
 }
 
 - (void)skInterstitialAdWillLoad:(SKAdsInterstitialAd *)interstitialAd {
@@ -75,7 +75,8 @@
 
 - (void)skInterstitialAdDidLoad:(SKAdsInterstitialAd *)interstitialAd {
     NSLog(@"Ad did load");
-    [self updateUIWithState:StateReady];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    [self.interstitialAd presentFromViewController:self];
 }
 
 - (BOOL)skInterstitialAdActionShouldBegin:(SKAdsInterstitialAd *)interstitialAd willLeaveApplication:(BOOL)willLeave {
@@ -85,5 +86,17 @@
 
 - (void)skInterstitialAdActionDidFinish:(SKAdsInterstitialAd *)interstitialAd {
     NSLog(@"Ad action did finish");
+    self.isShowingInterstitial = NO;
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+}
+
+#pragma mark -
+#pragma mark UIWebViewDelegate
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [self.activityIndicatorWebView stopAnimating];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [self.activityIndicatorWebView stopAnimating];
 }
 @end
