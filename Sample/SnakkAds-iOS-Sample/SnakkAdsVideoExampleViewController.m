@@ -12,12 +12,10 @@
 
 //*************************************
 // Replace with your valid ZONE_ID here.
-#define ZONE_ID_IPHONE @"50961"
-#define ZONE_ID_IPAD @"50983"
+#define ZONE_ID @"22219" // for example use only, don't use this zone in your app!
 
-@interface SnakkAdsVideoExampleViewController ()<UIWebViewDelegate>
+@interface SnakkAdsVideoExampleViewController ()
 
-@property BOOL isShowingVideo;
 @end
 
 @implementation SnakkAdsVideoExampleViewController
@@ -40,16 +38,6 @@
     
     //Optional... override the presentingViewController (defaults to the delegate)
     //_videoAd.presentingViewController = self;
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.hapticgeneration.com.au"]]];
-}
-
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-    if (!self.isShowingVideo){
-        [self requestAds];
-        self.isShowingVideo = YES;
-    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,19 +47,20 @@
 
 - (void)requestAds {    
     // Create an adsRequest object and request ads from the ad server with your own ZONE_ID
-    NSString * zoneID = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? ZONE_ID_IPAD : ZONE_ID_IPHONE;
-    TVASTAdsRequest *request = [TVASTAdsRequest requestWithAdZone:zoneID];
+    TVASTAdsRequest *request = [TVASTAdsRequest requestWithAdZone:ZONE_ID];
     [_videoAd requestAdsWithRequestObject:request];
     
     //If you want to specify the type of video ad you are requesting, use the call below.
     //[_videoAd requestAdsWithRequestObject:request andVideoType:SKAdsVideoTypeMidroll];
 }
 
+- (IBAction)onRequestAds {
+    [self requestAds];
+}
+
 - (void)skVideoInterstitialAdDidFinish:(SKAdsVideoInterstitialAd *)videoAd {
     NSLog(@"Override point for resuming your app's content.");
     [_videoAd unloadAdsManager];
-    self.isShowingVideo = NO;
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
 - (void)viewDidUnload {
@@ -81,21 +70,10 @@
 
 - (void)skVideoInterstitialAdDidLoad:(SKAdsVideoInterstitialAd *)videoAd {
     NSLog(@"We received an ad... now show it.");
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
     [videoAd playVideoFromAdsManager];
 }
 
 - (void)skVideoInterstitialAdDidFail:(SKAdsVideoInterstitialAd *)videoAd withErrorString:(NSString *)error {
     NSLog(@"%@", error);
-}
-
-#pragma mark -
-#pragma mark UIWebViewDelegate
--(void)webViewDidFinishLoad:(UIWebView *)webView{
-    [self.activityIndicatorWebView stopAnimating];
-}
-
--(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    [self.activityIndicatorWebView stopAnimating];
 }
 @end

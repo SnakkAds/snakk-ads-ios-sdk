@@ -14,6 +14,10 @@
     SKAdsAdPrompt *skAdPrompt;
 }
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorWebView;
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (retain, nonatomic) IBOutlet UIButton *preloadButton;
+
+-(IBAction)preLoadAdPrompt:(id)sender;
+-(IBAction)showAdPrompt:(id)sender;
+-(IBAction)simpleExample:(id)sender;
+
 @end

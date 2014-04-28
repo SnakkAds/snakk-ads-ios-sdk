@@ -13,8 +13,5 @@
 @interface SnakkAdsBannerExampleViewController : UIViewController<SKAdsBannerAdViewDelegate>
 
 @property (retain, nonatomic) SKAdsBannerAdView *skAd;
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorAd;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorWebView;
 
 @end

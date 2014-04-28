@@ -7,22 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CB199BA18ED1F3B0016E2D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB199B918ED1F3B0016E2D5 /* Images.xcassets */; };
-		4CB199BC18ED1F420016E2D5 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB199BB18ED1F420016E2D5 /* Images-2.xcassets */; };
-		4CF262F418ECEDE000832FFD /* tab_richmedia.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF262EA18ECEDE000832FFD /* tab_richmedia.png */; };
-		4CF262F518ECEDE000832FFD /* tab_richmedia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF262EB18ECEDE000832FFD /* tab_richmedia@2x.png */; };
-		4CF262F618ECEDE000832FFD /* tab_standard.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF262EC18ECEDE000832FFD /* tab_standard.png */; };
-		4CF262F718ECEDE000832FFD /* tab_standard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF262ED18ECEDE000832FFD /* tab_standard@2x.png */; };
-		4CF262F918ECEDE000832FFD /* tab_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF262EF18ECEDE000832FFD /* tab_video@2x.png */; };
-		4CF2631218ED040900832FFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2630018ED040900832FFD /* InfoPlist.strings */; };
-		4CF2631318ED040900832FFD /* tab_adprompt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2630318ED040900832FFD /* tab_adprompt.png */; };
-		4CF2631418ED040900832FFD /* tab_adprompt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2630418ED040900832FFD /* tab_adprompt@2x.png */; };
-		4CF2631518ED040900832FFD /* tab_interstitial.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2630518ED040900832FFD /* tab_interstitial.png */; };
-		4CF2631618ED040900832FFD /* tab_interstitial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2630618ED040900832FFD /* tab_interstitial@2x.png */; };
-		4CF2631B18ED040900832FFD /* tab_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2630B18ED040900832FFD /* tab_video.png */; };
-		4CF2631E18ED040900832FFD /* SnakkAdsBannerSquareExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2630F18ED040900832FFD /* SnakkAdsBannerSquareExampleViewController.m */; };
-		4CF2682818F51FF300D00E47 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2682718F51FF300D00E47 /* Default-568h@2x.png */; };
-		4CF2682B18F520F800D00E47 /* SnakkScreenHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2682A18F520F800D00E47 /* SnakkScreenHelper.m */; };
 		B03E55FA1868BA3100AD3CF2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E55F91868BA3100AD3CF2 /* AVFoundation.framework */; };
 		B03E55FC1868BA4A00AD3CF2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E55FB1868BA4A00AD3CF2 /* CoreMedia.framework */; };
 		B03E55FE1868BA5900AD3CF2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E55FD1868BA5900AD3CF2 /* AudioToolbox.framework */; };
@@ -40,8 +24,12 @@
 		CD5CA982184D123B008B5568 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA981184D123B008B5568 /* CoreTelephony.framework */; };
 		CD5CA984184D1240008B5568 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA983184D1240008B5568 /* QuartzCore.framework */; };
 		CD5CA986184D1248008B5568 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA985184D1248008B5568 /* SystemConfiguration.framework */; };
+		CD8743491851086A005FBC0A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CD8743481851086A005FBC0A /* README.md */; };
+		CDB5387518D8BEDF0054446C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB5385E18D8BEDF0054446C /* Main_iPad.storyboard */; };
+		CDB5387618D8BEDF0054446C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB5386018D8BEDF0054446C /* Main_iPhone.storyboard */; };
 		CDB5387718D8BEDF0054446C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDB5386218D8BEDF0054446C /* InfoPlist.strings */; };
 		CDB5387818D8BEDF0054446C /* fourth.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB5386418D8BEDF0054446C /* fourth.png */; };
+		CDB5387918D8BEDF0054446C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB5386518D8BEDF0054446C /* Images.xcassets */; };
 		CDB5387B18D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5386918D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m */; };
 		CDB5387C18D8BEDF0054446C /* SnakkAdsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5386B18D8BEDF0054446C /* SnakkAdsAppDelegate.m */; };
 		CDB5387D18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5386D18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.m */; };
@@ -51,8 +39,9 @@
 		CDB5388118D8BEDF0054446C /* SKAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDB5387318D8BEDF0054446C /* SKAds.bundle */; };
 		CDB5388218D8BEDF0054446C /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB5387418D8BEDF0054446C /* third.png */; };
 		CDB5388818D8BEEC0054446C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDB5388418D8BEEC0054446C /* InfoPlist.strings */; };
-		CDB5388918D8BEEC0054446C /* SnakkAds SDKTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDB5388618D8BEEC0054446C /* SnakkAds SDKTests-Info.plist */; };
+		CDB5388918D8BEEC0054446C /* SnakkAds-iOS-SampleTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDB5388618D8BEEC0054446C /* SnakkAds-iOS-SampleTests-Info.plist */; };
 		CDB5388C18D8C0420054446C /* SnakkAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB5388B18D8C0420054446C /* SnakkAds.framework */; };
+		CDB5388E18D8C21D0054446C /* SnakkAds-iOS-Sample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDB5388D18D8C21D0054446C /* SnakkAds-iOS-Sample-Info.plist */; };
 		CDEC25BB184E566B00D7647E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEC25BA184E566B00D7647E /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,46 +56,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4CB199B918ED1F3B0016E2D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4CB199BB18ED1F420016E2D5 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
-		4CF262E618ECEDE000832FFD /* tab_adprompt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_adprompt.png; sourceTree = "<group>"; };
-		4CF262E718ECEDE000832FFD /* tab_adprompt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_adprompt@2x.png"; sourceTree = "<group>"; };
-		4CF262E818ECEDE000832FFD /* tab_interstitial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_interstitial.png; sourceTree = "<group>"; };
-		4CF262E918ECEDE000832FFD /* tab_interstitial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_interstitial@2x.png"; sourceTree = "<group>"; };
-		4CF262EA18ECEDE000832FFD /* tab_richmedia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_richmedia.png; sourceTree = "<group>"; };
-		4CF262EB18ECEDE000832FFD /* tab_richmedia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_richmedia@2x.png"; sourceTree = "<group>"; };
-		4CF262EC18ECEDE000832FFD /* tab_standard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_standard.png; sourceTree = "<group>"; };
-		4CF262ED18ECEDE000832FFD /* tab_standard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_standard@2x.png"; sourceTree = "<group>"; };
-		4CF262EE18ECEDE000832FFD /* tab_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_video.png; sourceTree = "<group>"; };
-		4CF262EF18ECEDE000832FFD /* tab_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_video@2x.png"; sourceTree = "<group>"; };
-		4CF262FC18ED040900832FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main_iPad.storyboard; sourceTree = "<group>"; };
-		4CF262FE18ED040900832FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
-		4CF2630118ED040900832FFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		4CF2630318ED040900832FFD /* tab_adprompt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_adprompt.png; sourceTree = "<group>"; };
-		4CF2630418ED040900832FFD /* tab_adprompt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_adprompt@2x.png"; sourceTree = "<group>"; };
-		4CF2630518ED040900832FFD /* tab_interstitial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_interstitial.png; sourceTree = "<group>"; };
-		4CF2630618ED040900832FFD /* tab_interstitial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_interstitial@2x.png"; sourceTree = "<group>"; };
-		4CF2630718ED040900832FFD /* tab_richmedia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_richmedia.png; sourceTree = "<group>"; };
-		4CF2630818ED040900832FFD /* tab_richmedia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_richmedia@2x.png"; sourceTree = "<group>"; };
-		4CF2630918ED040900832FFD /* tab_standard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_standard.png; sourceTree = "<group>"; };
-		4CF2630A18ED040900832FFD /* tab_standard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_standard@2x.png"; sourceTree = "<group>"; };
-		4CF2630B18ED040900832FFD /* tab_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_video.png; sourceTree = "<group>"; };
-		4CF2630C18ED040900832FFD /* tab_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_video@2x.png"; sourceTree = "<group>"; };
-		4CF2630E18ED040900832FFD /* SnakkAdsBannerSquareExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakkAdsBannerSquareExampleViewController.h; sourceTree = "<group>"; };
-		4CF2630F18ED040900832FFD /* SnakkAdsBannerSquareExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakkAdsBannerSquareExampleViewController.m; sourceTree = "<group>"; };
-		4CF2682718F51FF300D00E47 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4CF2682918F520F800D00E47 /* SnakkScreenHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakkScreenHelper.h; sourceTree = "<group>"; };
-		4CF2682A18F520F800D00E47 /* SnakkScreenHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakkScreenHelper.m; sourceTree = "<group>"; };
 		B03E55F91868BA3100AD3CF2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B03E55FB1868BA4A00AD3CF2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B03E55FD1868BA5900AD3CF2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CD573B061889D8AE0040BFB8 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		CD573B081889D8EF0040BFB8 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		CD5CA93D184D11EC008B5568 /* SnakkAds SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SnakkAds SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5CA93D184D11EC008B5568 /* SnakkAds-iOS-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SnakkAds-iOS-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5CA940184D11EC008B5568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD5CA942184D11EC008B5568 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CD5CA944184D11EC008B5568 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CD5CA964184D11EC008B5568 /* SnakkAds SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SnakkAds SDKTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5CA964184D11EC008B5568 /* SnakkAds-iOS-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SnakkAds-iOS-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5CA965184D11EC008B5568 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CD5CA97B184D1229008B5568 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CD5CA97D184D122F008B5568 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -114,11 +73,13 @@
 		CD5CA981184D123B008B5568 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		CD5CA983184D1240008B5568 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CD5CA985184D1248008B5568 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD8743481851086A005FBC0A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CDB5385F18D8BEDF0054446C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		CDB5386118D8BEDF0054446C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		CDB5386318D8BEDF0054446C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDB5386418D8BEDF0054446C /* fourth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fourth.png; sourceTree = "<group>"; };
-		CDB5386718D8BEDF0054446C /* SnakkAds SDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SnakkAds SDK-Prefix.pch"; sourceTree = "<group>"; };
+		CDB5386518D8BEDF0054446C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CDB5386718D8BEDF0054446C /* SnakkAds-iOS-Sample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SnakkAds-iOS-Sample-Prefix.pch"; sourceTree = "<group>"; };
 		CDB5386818D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakkAdsAdPromptExampleViewController.h; sourceTree = "<group>"; };
 		CDB5386918D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakkAdsAdPromptExampleViewController.m; sourceTree = "<group>"; };
 		CDB5386A18D8BEDF0054446C /* SnakkAdsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakkAdsAppDelegate.h; sourceTree = "<group>"; };
@@ -133,10 +94,10 @@
 		CDB5387318D8BEDF0054446C /* SKAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SKAds.bundle; sourceTree = "<group>"; };
 		CDB5387418D8BEDF0054446C /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
 		CDB5388518D8BEEC0054446C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CDB5388618D8BEEC0054446C /* SnakkAds SDKTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SnakkAds SDKTests-Info.plist"; sourceTree = "<group>"; };
+		CDB5388618D8BEEC0054446C /* SnakkAds-iOS-SampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SnakkAds-iOS-SampleTests-Info.plist"; sourceTree = "<group>"; };
 		CDB5388718D8BEEC0054446C /* SnakkAds_iOS_SampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakkAds_iOS_SampleTests.m; sourceTree = "<group>"; };
 		CDB5388B18D8C0420054446C /* SnakkAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnakkAds.framework; sourceTree = "<group>"; };
-		CDB5388D18D8C21D0054446C /* SnakkAds SDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SnakkAds SDK-Info.plist"; sourceTree = "<group>"; };
+		CDB5388D18D8C21D0054446C /* SnakkAds-iOS-Sample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SnakkAds-iOS-Sample-Info.plist"; sourceTree = "<group>"; };
 		CDEC25BA184E566B00D7647E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -177,63 +138,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4CF262E518ECEDE000832FFD /* images */ = {
-			isa = PBXGroup;
-			children = (
-				4CF262E618ECEDE000832FFD /* tab_adprompt.png */,
-				4CF262E718ECEDE000832FFD /* tab_adprompt@2x.png */,
-				4CF262E818ECEDE000832FFD /* tab_interstitial.png */,
-				4CF262E918ECEDE000832FFD /* tab_interstitial@2x.png */,
-				4CF262EA18ECEDE000832FFD /* tab_richmedia.png */,
-				4CF262EB18ECEDE000832FFD /* tab_richmedia@2x.png */,
-				4CF262EC18ECEDE000832FFD /* tab_standard.png */,
-				4CF262ED18ECEDE000832FFD /* tab_standard@2x.png */,
-				4CF262EE18ECEDE000832FFD /* tab_video.png */,
-				4CF262EF18ECEDE000832FFD /* tab_video@2x.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		4CF262FA18ED040900832FFD /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				4CF262FB18ED040900832FFD /* Main_iPad.storyboard */,
-				4CF262FD18ED040900832FFD /* Main_iPhone.storyboard */,
-			);
-			path = Base.lproj;
-			sourceTree = "<group>";
-		};
-		4CF262FF18ED040900832FFD /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				4CF2630018ED040900832FFD /* InfoPlist.strings */,
-			);
-			path = en.lproj;
-			sourceTree = "<group>";
-		};
-		4CF2630218ED040900832FFD /* images */ = {
-			isa = PBXGroup;
-			children = (
-				4CF2630318ED040900832FFD /* tab_adprompt.png */,
-				4CF2630418ED040900832FFD /* tab_adprompt@2x.png */,
-				4CF2630518ED040900832FFD /* tab_interstitial.png */,
-				4CF2630618ED040900832FFD /* tab_interstitial@2x.png */,
-				4CF2630718ED040900832FFD /* tab_richmedia.png */,
-				4CF2630818ED040900832FFD /* tab_richmedia@2x.png */,
-				4CF2630918ED040900832FFD /* tab_standard.png */,
-				4CF2630A18ED040900832FFD /* tab_standard@2x.png */,
-				4CF2630B18ED040900832FFD /* tab_video.png */,
-				4CF2630C18ED040900832FFD /* tab_video@2x.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
 		CD5CA934184D11EC008B5568 = {
 			isa = PBXGroup;
 			children = (
-				4CF2682718F51FF300D00E47 /* Default-568h@2x.png */,
 				CDB5385D18D8BEDF0054446C /* SnakkAds-iOS-Sample */,
 				CDB5388318D8BEEB0054446C /* SnakkAds-iOS-SampleTests */,
+				CD8743481851086A005FBC0A /* README.md */,
 				CD5CA93F184D11EC008B5568 /* Frameworks */,
 				CD5CA93E184D11EC008B5568 /* Products */,
 			);
@@ -242,8 +152,8 @@
 		CD5CA93E184D11EC008B5568 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD5CA93D184D11EC008B5568 /* SnakkAds SDK.app */,
-				CD5CA964184D11EC008B5568 /* SnakkAds SDKTests.xctest */,
+				CD5CA93D184D11EC008B5568 /* SnakkAds-iOS-Sample.app */,
+				CD5CA964184D11EC008B5568 /* SnakkAds-iOS-SampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,35 +185,26 @@
 		CDB5385D18D8BEDF0054446C /* SnakkAds-iOS-Sample */ = {
 			isa = PBXGroup;
 			children = (
-				4CF262FA18ED040900832FFD /* Base.lproj */,
-				4CF262FF18ED040900832FFD /* en.lproj */,
-				4CF2630218ED040900832FFD /* images */,
-				4CF262E518ECEDE000832FFD /* images */,
 				CDB5385E18D8BEDF0054446C /* Main_iPad.storyboard */,
 				CDB5386018D8BEDF0054446C /* Main_iPhone.storyboard */,
 				CDB5386218D8BEDF0054446C /* InfoPlist.strings */,
 				CDB5386418D8BEDF0054446C /* fourth.png */,
-				CDB5388D18D8C21D0054446C /* SnakkAds SDK-Info.plist */,
-				CDB5386718D8BEDF0054446C /* SnakkAds SDK-Prefix.pch */,
+				CDB5386518D8BEDF0054446C /* Images.xcassets */,
+				CDB5388D18D8C21D0054446C /* SnakkAds-iOS-Sample-Info.plist */,
+				CDB5386718D8BEDF0054446C /* SnakkAds-iOS-Sample-Prefix.pch */,
 				CDB5386818D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.h */,
 				CDB5386918D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m */,
 				CDB5386A18D8BEDF0054446C /* SnakkAdsAppDelegate.h */,
 				CDB5386B18D8BEDF0054446C /* SnakkAdsAppDelegate.m */,
 				CDB5386C18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.h */,
 				CDB5386D18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.m */,
-				4CF2630E18ED040900832FFD /* SnakkAdsBannerSquareExampleViewController.h */,
-				4CF2630F18ED040900832FFD /* SnakkAdsBannerSquareExampleViewController.m */,
 				CDB5386E18D8BEDF0054446C /* SnakkAdsInterstitialExampleViewController.h */,
 				CDB5386F18D8BEDF0054446C /* SnakkAdsInterstitialExampleViewController.m */,
 				CDB5387018D8BEDF0054446C /* SnakkAdsVideoExampleViewController.h */,
 				CDB5387118D8BEDF0054446C /* SnakkAdsVideoExampleViewController.m */,
-				4CF2682918F520F800D00E47 /* SnakkScreenHelper.h */,
-				4CF2682A18F520F800D00E47 /* SnakkScreenHelper.m */,
 				CDB5387218D8BEDF0054446C /* main.m */,
 				CDB5387318D8BEDF0054446C /* SKAds.bundle */,
 				CDB5387418D8BEDF0054446C /* third.png */,
-				4CB199B918ED1F3B0016E2D5 /* Images.xcassets */,
-				4CB199BB18ED1F420016E2D5 /* Images-2.xcassets */,
 			);
 			path = "SnakkAds-iOS-Sample";
 			sourceTree = "<group>";
@@ -312,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				CDB5388418D8BEEC0054446C /* InfoPlist.strings */,
-				CDB5388618D8BEEC0054446C /* SnakkAds SDKTests-Info.plist */,
+				CDB5388618D8BEEC0054446C /* SnakkAds-iOS-SampleTests-Info.plist */,
 				CDB5388718D8BEEC0054446C /* SnakkAds_iOS_SampleTests.m */,
 			);
 			path = "SnakkAds-iOS-SampleTests";
@@ -321,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CD5CA93C184D11EC008B5568 /* SnakkAds SDK */ = {
+		CD5CA93C184D11EC008B5568 /* SnakkAds-iOS-Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD5CA975184D11EC008B5568 /* Build configuration list for PBXNativeTarget "SnakkAds SDK" */;
+			buildConfigurationList = CD5CA975184D11EC008B5568 /* Build configuration list for PBXNativeTarget "SnakkAds-iOS-Sample" */;
 			buildPhases = (
 				CD5CA939184D11EC008B5568 /* Sources */,
 				CD5CA93A184D11EC008B5568 /* Frameworks */,
@@ -333,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = "SnakkAds SDK";
+			name = "SnakkAds-iOS-Sample";
 			productName = "MaaSAdvertising-iOS-Sample";
-			productReference = CD5CA93D184D11EC008B5568 /* SnakkAds SDK.app */;
+			productReference = CD5CA93D184D11EC008B5568 /* SnakkAds-iOS-Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CD5CA963184D11EC008B5568 /* SnakkAds SDKTests */ = {
+		CD5CA963184D11EC008B5568 /* SnakkAds-iOS-SampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD5CA978184D11EC008B5568 /* Build configuration list for PBXNativeTarget "SnakkAds SDKTests" */;
+			buildConfigurationList = CD5CA978184D11EC008B5568 /* Build configuration list for PBXNativeTarget "SnakkAds-iOS-SampleTests" */;
 			buildPhases = (
 				CD5CA960184D11EC008B5568 /* Sources */,
 				CD5CA961184D11EC008B5568 /* Frameworks */,
@@ -351,9 +252,9 @@
 			dependencies = (
 				CD5CA96A184D11EC008B5568 /* PBXTargetDependency */,
 			);
-			name = "SnakkAds SDKTests";
+			name = "SnakkAds-iOS-SampleTests";
 			productName = "MaaSAdvertising-iOS-SampleTests";
-			productReference = CD5CA964184D11EC008B5568 /* SnakkAds SDKTests.xctest */;
+			productReference = CD5CA964184D11EC008B5568 /* SnakkAds-iOS-SampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -363,7 +264,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MaaSAdvertising;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Phunware;
 				TargetAttributes = {
 					CD5CA963184D11EC008B5568 = {
@@ -371,7 +272,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CD5CA938184D11EC008B5568 /* Build configuration list for PBXProject "SnakkAds SDK" */;
+			buildConfigurationList = CD5CA938184D11EC008B5568 /* Build configuration list for PBXProject "SnakkAds-iOS-Sample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -384,8 +285,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD5CA93C184D11EC008B5568 /* SnakkAds SDK */,
-				CD5CA963184D11EC008B5568 /* SnakkAds SDKTests */,
+				CD5CA93C184D11EC008B5568 /* SnakkAds-iOS-Sample */,
+				CD5CA963184D11EC008B5568 /* SnakkAds-iOS-SampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,25 +296,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF262F618ECEDE000832FFD /* tab_standard.png in Resources */,
-				4CF262F418ECEDE000832FFD /* tab_richmedia.png in Resources */,
+				CD8743491851086A005FBC0A /* README.md in Resources */,
 				CDB5387718D8BEDF0054446C /* InfoPlist.strings in Resources */,
-				4CF262F718ECEDE000832FFD /* tab_standard@2x.png in Resources */,
-				4CF262F518ECEDE000832FFD /* tab_richmedia@2x.png in Resources */,
-				4CF2631518ED040900832FFD /* tab_interstitial.png in Resources */,
+				CDB5388E18D8C21D0054446C /* SnakkAds-iOS-Sample-Info.plist in Resources */,
+				CDB5387518D8BEDF0054446C /* Main_iPad.storyboard in Resources */,
 				CDB5388118D8BEDF0054446C /* SKAds.bundle in Resources */,
-				4CF2631418ED040900832FFD /* tab_adprompt@2x.png in Resources */,
-				4CF2631B18ED040900832FFD /* tab_video.png in Resources */,
-				4CF2631318ED040900832FFD /* tab_adprompt.png in Resources */,
-				4CB199BA18ED1F3B0016E2D5 /* Images.xcassets in Resources */,
-				4CF2631218ED040900832FFD /* InfoPlist.strings in Resources */,
-				CDB5388918D8BEEC0054446C /* SnakkAds SDKTests-Info.plist in Resources */,
-				4CF262F918ECEDE000832FFD /* tab_video@2x.png in Resources */,
+				CDB5388918D8BEEC0054446C /* SnakkAds-iOS-SampleTests-Info.plist in Resources */,
+				CDB5387918D8BEDF0054446C /* Images.xcassets in Resources */,
 				CDB5387818D8BEDF0054446C /* fourth.png in Resources */,
-				4CF2631618ED040900832FFD /* tab_interstitial@2x.png in Resources */,
+				CDB5387618D8BEDF0054446C /* Main_iPhone.storyboard in Resources */,
 				CDB5388218D8BEDF0054446C /* third.png in Resources */,
-				4CB199BC18ED1F420016E2D5 /* Images-2.xcassets in Resources */,
-				4CF2682818F51FF300D00E47 /* Default-568h@2x.png in Resources */,
 				CDB5388818D8BEEC0054446C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,13 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF2631E18ED040900832FFD /* SnakkAdsBannerSquareExampleViewController.m in Sources */,
 				CDB5387D18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.m in Sources */,
 				CDB5387B18D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m in Sources */,
 				CDB5387F18D8BEDF0054446C /* SnakkAdsVideoExampleViewController.m in Sources */,
 				CDB5387E18D8BEDF0054446C /* SnakkAdsInterstitialExampleViewController.m in Sources */,
 				CDB5388018D8BEDF0054446C /* main.m in Sources */,
-				4CF2682B18F520F800D00E47 /* SnakkScreenHelper.m in Sources */,
 				CDB5387C18D8BEDF0054446C /* SnakkAdsAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,36 +345,12 @@
 /* Begin PBXTargetDependency section */
 		CD5CA96A184D11EC008B5568 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CD5CA93C184D11EC008B5568 /* SnakkAds SDK */;
+			target = CD5CA93C184D11EC008B5568 /* SnakkAds-iOS-Sample */;
 			targetProxy = CD5CA969184D11EC008B5568 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4CF262FB18ED040900832FFD /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CF262FC18ED040900832FFD /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		4CF262FD18ED040900832FFD /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CF262FE18ED040900832FFD /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		4CF2630018ED040900832FFD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CF2630118ED040900832FFD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		CDB5385E18D8BEDF0054446C /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -524,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -563,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -595,25 +463,21 @@
 		CD5CA976184D11EC008B5568 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"\"$(SRCROOT)/../Framework\"",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SnakkAds-iOS-Sample/SnakkAds SDK-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "SnakkAds-iOS-Sample/SnakkAds SDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = NO;
+				GCC_PREFIX_HEADER = "SnakkAds-iOS-Sample/SnakkAds-iOS-Sample-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SnakkAds-iOS-Sample/SnakkAds-iOS-Sample-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
-				PRODUCT_NAME = "SnakkAds SDK";
-				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = "armv7 armv7s";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -621,25 +485,21 @@
 		CD5CA977184D11EC008B5568 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"\"$(SRCROOT)/../Framework\"",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SnakkAds-iOS-Sample/SnakkAds SDK-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "SnakkAds-iOS-Sample/SnakkAds SDK-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = NO;
+				GCC_PREFIX_HEADER = "SnakkAds-iOS-Sample/SnakkAds-iOS-Sample-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SnakkAds-iOS-Sample/SnakkAds-iOS-Sample-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
-				PRODUCT_NAME = "SnakkAds SDK";
-				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = "armv7 armv7s";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -647,6 +507,7 @@
 		CD5CA979184D11EC008B5568 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SnakkAds-iOS-Sample.app/SnakkAds-iOS-Sample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -659,8 +520,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SnakkAds-iOS-SampleTests/SnakkAds SDKTests-Info.plist";
-				PRODUCT_NAME = "SnakkAds SDKTests";
+				INFOPLIST_FILE = "SnakkAds-iOS-SampleTests/SnakkAds-iOS-SampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -669,6 +530,7 @@
 		CD5CA97A184D11EC008B5568 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SnakkAds-iOS-Sample.app/SnakkAds-iOS-Sample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -677,8 +539,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SnakkAds-iOS-Sample/SnakkAds-iOS-Sample-Prefix.pch";
-				INFOPLIST_FILE = "SnakkAds-iOS-SampleTests/SnakkAds SDKTests-Info.plist";
-				PRODUCT_NAME = "SnakkAds SDKTests";
+				INFOPLIST_FILE = "SnakkAds-iOS-SampleTests/SnakkAds-iOS-SampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -687,7 +549,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CD5CA938184D11EC008B5568 /* Build configuration list for PBXProject "SnakkAds SDK" */ = {
+		CD5CA938184D11EC008B5568 /* Build configuration list for PBXProject "SnakkAds-iOS-Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD5CA973184D11EC008B5568 /* Debug */,
@@ -696,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD5CA975184D11EC008B5568 /* Build configuration list for PBXNativeTarget "SnakkAds SDK" */ = {
+		CD5CA975184D11EC008B5568 /* Build configuration list for PBXNativeTarget "SnakkAds-iOS-Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD5CA976184D11EC008B5568 /* Debug */,
@@ -705,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD5CA978184D11EC008B5568 /* Build configuration list for PBXNativeTarget "SnakkAds SDKTests" */ = {
+		CD5CA978184D11EC008B5568 /* Build configuration list for PBXNativeTarget "SnakkAds-iOS-SampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CD5CA979184D11EC008B5568 /* Debug */,
