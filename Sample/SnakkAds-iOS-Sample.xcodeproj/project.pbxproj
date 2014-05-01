@@ -30,7 +30,6 @@
 		CDB5387718D8BEDF0054446C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDB5386218D8BEDF0054446C /* InfoPlist.strings */; };
 		CDB5387818D8BEDF0054446C /* fourth.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB5386418D8BEDF0054446C /* fourth.png */; };
 		CDB5387918D8BEDF0054446C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB5386518D8BEDF0054446C /* Images.xcassets */; };
-		CDB5387B18D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5386918D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m */; };
 		CDB5387C18D8BEDF0054446C /* SnakkAdsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5386B18D8BEDF0054446C /* SnakkAdsAppDelegate.m */; };
 		CDB5387D18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5386D18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.m */; };
 		CDB5387E18D8BEDF0054446C /* SnakkAdsInterstitialExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB5386F18D8BEDF0054446C /* SnakkAdsInterstitialExampleViewController.m */; };
@@ -80,8 +79,6 @@
 		CDB5386418D8BEDF0054446C /* fourth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fourth.png; sourceTree = "<group>"; };
 		CDB5386518D8BEDF0054446C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CDB5386718D8BEDF0054446C /* SnakkAds-iOS-Sample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SnakkAds-iOS-Sample-Prefix.pch"; sourceTree = "<group>"; };
-		CDB5386818D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakkAdsAdPromptExampleViewController.h; sourceTree = "<group>"; };
-		CDB5386918D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakkAdsAdPromptExampleViewController.m; sourceTree = "<group>"; };
 		CDB5386A18D8BEDF0054446C /* SnakkAdsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakkAdsAppDelegate.h; sourceTree = "<group>"; };
 		CDB5386B18D8BEDF0054446C /* SnakkAdsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakkAdsAppDelegate.m; sourceTree = "<group>"; };
 		CDB5386C18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakkAdsBannerExampleViewController.h; sourceTree = "<group>"; };
@@ -192,8 +189,6 @@
 				CDB5386518D8BEDF0054446C /* Images.xcassets */,
 				CDB5388D18D8C21D0054446C /* SnakkAds-iOS-Sample-Info.plist */,
 				CDB5386718D8BEDF0054446C /* SnakkAds-iOS-Sample-Prefix.pch */,
-				CDB5386818D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.h */,
-				CDB5386918D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m */,
 				CDB5386A18D8BEDF0054446C /* SnakkAdsAppDelegate.h */,
 				CDB5386B18D8BEDF0054446C /* SnakkAdsAppDelegate.m */,
 				CDB5386C18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.h */,
@@ -325,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB5387D18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.m in Sources */,
-				CDB5387B18D8BEDF0054446C /* SnakkAdsAdPromptExampleViewController.m in Sources */,
 				CDB5387F18D8BEDF0054446C /* SnakkAdsVideoExampleViewController.m in Sources */,
 				CDB5387E18D8BEDF0054446C /* SnakkAdsInterstitialExampleViewController.m in Sources */,
 				CDB5388018D8BEDF0054446C /* main.m in Sources */,

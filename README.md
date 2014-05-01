@@ -1,7 +1,7 @@
 Snakk Ads iOS SDK
 ================
 
-Version 3.0.11
+Version 3.0.12
 
 This is Snakk's iOS SDK for Advertising. Visit http://www.snakkads.com/ for more details and to sign up.
 
@@ -83,21 +83,6 @@ skAd = [[SKAdsBannerAdView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
 // To hide and cancel ads: 
 [self.skAd hide];
 [self.skAd cancelAds];
-```
-
-
-
-### AdPrompt Usage
-
-AdPrompts are a simple ad unit designed to have a native feel. When the user accepts the option to download an app, song or video, they will be taken to the app store.
-
-```objective-c
-// In your .m file:
-#import <SnakkAds/SKAdsAdPrompt.h>
-...
-SKAdsRequest *request = [SKAdsRequest requestWithAdZone:@"**YOUR ZONE ID**"];
-SKAdsAdPrompt *prompt = [[SKAdsAdPrompt alloc] initWithRequest:request];
-[prompt showAsAlert];
 ```
 
 

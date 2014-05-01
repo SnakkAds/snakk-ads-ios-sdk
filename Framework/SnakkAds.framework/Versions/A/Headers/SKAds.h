@@ -14,6 +14,5 @@
 #import "SKAdsRequest.h"
 #import "SKAdsBannerAdView.h"
 #import "SKAdsInterstitialAd.h"
-#import "SKAdsAdPrompt.h"
 
 #endif

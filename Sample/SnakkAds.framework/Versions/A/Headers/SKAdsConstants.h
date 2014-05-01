@@ -10,7 +10,7 @@
 #ifndef SKAds_iOS_Sample_SKAdsConstants_h
 #define SKAds_iOS_Sample_SKAdsConstants_h
 
-#define SKADS_VERSION @"3.0.11"
+#define SKADS_VERSION @"3.0.12"
 
 /**
  `SKAdsAdType` defines the available ad types for interstitial ads.
