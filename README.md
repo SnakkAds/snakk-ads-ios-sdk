@@ -56,7 +56,7 @@ SKAds.bundle includes files needed for media-rich advertisements that make use o
 Integration
 ----------
 
-The Snakk Ads SDK allows developers to serve many types of ads, including banner, interstitial, AdPrompt and video ads.
+The Snakk Ads SDK allows developers to serve many types of ads, including banner, interstitial and video ads.
 
 
 ### Banner Usage
