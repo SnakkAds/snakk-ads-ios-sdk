@@ -8,3 +8,6 @@
  
 ##Version 3.0.12 (Thursday, May 1, 2014)
  * Removed AdPrompts from SDK
+
+##Version 3.0.13 (Monday, May 12, 2014)
+ * Code fix for updating adView when ad is received
