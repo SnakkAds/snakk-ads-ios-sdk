@@ -11,3 +11,6 @@
 
 ##Version 3.0.13 (Monday, May 12, 2014)
  * Code fix for updating adView when ad is received
+
+##Version 3.0.15 (Tuesday, September 16, 2014)
+ * Improved MRAID 2.0 functionality
