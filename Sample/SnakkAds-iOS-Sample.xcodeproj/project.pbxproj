@@ -10,7 +10,6 @@
 		B03E55FA1868BA3100AD3CF2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E55F91868BA3100AD3CF2 /* AVFoundation.framework */; };
 		B03E55FC1868BA4A00AD3CF2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E55FB1868BA4A00AD3CF2 /* CoreMedia.framework */; };
 		B03E55FE1868BA5900AD3CF2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03E55FD1868BA5900AD3CF2 /* AudioToolbox.framework */; };
-		CD1EC27B19C7569700C3331B /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1EC27A19C7569700C3331B /* libGoogleAdMobAds.a */; };
 		CD573B071889D8AE0040BFB8 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD573B061889D8AE0040BFB8 /* EventKit.framework */; };
 		CD573B091889D8EF0040BFB8 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD573B081889D8EF0040BFB8 /* EventKitUI.framework */; };
 		CD5CA941184D11EC008B5568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA940184D11EC008B5568 /* Foundation.framework */; };
@@ -59,19 +58,6 @@
 		B03E55F91868BA3100AD3CF2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B03E55FB1868BA4A00AD3CF2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		B03E55FD1868BA5900AD3CF2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		CD1EC26E19C7569700C3331B /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdMobExtras.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADAdMobExtras.h"; sourceTree = "<group>"; };
-		CD1EC26F19C7569700C3331B /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdNetworkExtras.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADAdNetworkExtras.h"; sourceTree = "<group>"; };
-		CD1EC27019C7569700C3331B /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADAdSize.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADAdSize.h"; sourceTree = "<group>"; };
-		CD1EC27119C7569700C3331B /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADBannerView.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADBannerView.h"; sourceTree = "<group>"; };
-		CD1EC27219C7569700C3331B /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADBannerViewDelegate.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADBannerViewDelegate.h"; sourceTree = "<group>"; };
-		CD1EC27319C7569700C3331B /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInterstitial.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADInterstitial.h"; sourceTree = "<group>"; };
-		CD1EC27419C7569700C3331B /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInterstitialDelegate.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADInterstitialDelegate.h"; sourceTree = "<group>"; };
-		CD1EC27519C7569700C3331B /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMAdNetworkAdapterProtocol.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADMAdNetworkAdapterProtocol.h"; sourceTree = "<group>"; };
-		CD1EC27619C7569700C3331B /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMAdNetworkConnectorProtocol.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADMAdNetworkConnectorProtocol.h"; sourceTree = "<group>"; };
-		CD1EC27719C7569700C3331B /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMEnums.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADMEnums.h"; sourceTree = "<group>"; };
-		CD1EC27819C7569700C3331B /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADRequest.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADRequest.h"; sourceTree = "<group>"; };
-		CD1EC27919C7569700C3331B /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADRequestError.h; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/GADRequestError.h"; sourceTree = "<group>"; };
-		CD1EC27A19C7569700C3331B /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = "SnakkAds-iOS-Sample/GoogleAdMobAdsSDK/libGoogleAdMobAds.a"; sourceTree = "<group>"; };
 		CD573B061889D8AE0040BFB8 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		CD573B081889D8EF0040BFB8 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		CD5CA93D184D11EC008B5568 /* SnakkAds-iOS-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SnakkAds-iOS-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +72,8 @@
 		CD5CA981184D123B008B5568 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		CD5CA983184D1240008B5568 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CD5CA985184D1248008B5568 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD6C17421A421191009FA29E /* TapItMediationAdMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapItMediationAdMob.h; sourceTree = SOURCE_ROOT; };
+		CD6C17431A421191009FA29E /* TapItMediationAdMob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapItMediationAdMob.m; sourceTree = SOURCE_ROOT; };
 		CD8743481851086A005FBC0A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CDB5385F18D8BEDF0054446C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		CDB5386118D8BEDF0054446C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -126,7 +114,6 @@
 				CD5CA986184D1248008B5568 /* SystemConfiguration.framework in Frameworks */,
 				CD5CA984184D1240008B5568 /* QuartzCore.framework in Frameworks */,
 				CD5CA982184D123B008B5568 /* CoreTelephony.framework in Frameworks */,
-				CD1EC27B19C7569700C3331B /* libGoogleAdMobAds.a in Frameworks */,
 				CD5CA980184D1233008B5568 /* AdSupport.framework in Frameworks */,
 				CD5CA97E184D122F008B5568 /* StoreKit.framework in Frameworks */,
 				CD5CA97C184D1229008B5568 /* CoreLocation.framework in Frameworks */,
@@ -150,27 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CD1EC27C19C756A000C3331B /* GoogleAdMobSDK */ = {
-			isa = PBXGroup;
-			children = (
-				CD1EC26E19C7569700C3331B /* GADAdMobExtras.h */,
-				CD1EC26F19C7569700C3331B /* GADAdNetworkExtras.h */,
-				CD1EC27019C7569700C3331B /* GADAdSize.h */,
-				CD1EC27119C7569700C3331B /* GADBannerView.h */,
-				CD1EC27219C7569700C3331B /* GADBannerViewDelegate.h */,
-				CD1EC27319C7569700C3331B /* GADInterstitial.h */,
-				CD1EC27419C7569700C3331B /* GADInterstitialDelegate.h */,
-				CD1EC27519C7569700C3331B /* GADMAdNetworkAdapterProtocol.h */,
-				CD1EC27619C7569700C3331B /* GADMAdNetworkConnectorProtocol.h */,
-				CD1EC27719C7569700C3331B /* GADMEnums.h */,
-				CD1EC27819C7569700C3331B /* GADRequest.h */,
-				CD1EC27919C7569700C3331B /* GADRequestError.h */,
-				CD1EC27A19C7569700C3331B /* libGoogleAdMobAds.a */,
-			);
-			name = GoogleAdMobSDK;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		CD5CA934184D11EC008B5568 = {
 			isa = PBXGroup;
 			children = (
@@ -236,7 +202,8 @@
 				CDB5387118D8BEDF0054446C /* SnakkAdsVideoExampleViewController.m */,
 				CDB5387218D8BEDF0054446C /* main.m */,
 				CDB5387318D8BEDF0054446C /* SKAds.bundle */,
-				CD1EC27C19C756A000C3331B /* GoogleAdMobSDK */,
+				CD6C17421A421191009FA29E /* TapItMediationAdMob.h */,
+				CD6C17431A421191009FA29E /* TapItMediationAdMob.m */,
 			);
 			path = "SnakkAds-iOS-Sample";
 			sourceTree = "<group>";
