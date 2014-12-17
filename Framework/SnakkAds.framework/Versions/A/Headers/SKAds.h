@@ -14,5 +14,6 @@
 #import "SKAdsRequest.h"
 #import "SKAdsBannerAdView.h"
 #import "SKAdsInterstitialAd.h"
-
+#import "SKAdsNativeAdManager.h"
+#import "SKAdsNativeAd.h"
 #endif
