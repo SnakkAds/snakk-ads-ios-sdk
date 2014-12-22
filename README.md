@@ -1,7 +1,7 @@
 Snakk Ads iOS SDK
 ================
 
-Version 3.0.15
+Version 3.1
 
 This is Snakk's iOS SDK for Advertising. Visit http://www.snakkads.com/ for more details and to sign up.
 
@@ -206,6 +206,61 @@ If you want to specify the type of video ad you are requesting, use the call bel
     NSLog(@"%@", error);
 }
 ```
+### Native Ad Usage
+
+~~~~
+// in your .h file
+#import <SnakkAds/SKAdsNativeAdManager.h>
+
+@interface MyViewController : UIViewController <SKAdsNativeAdDelegate>
+
+@property (nonatomic, retain) SKAdsNativeAdManager *skNativeManager;
+...
+
+// in your .m file
+#import <SnakkAds/SKAds.h>
+...
+skNativeManager = [[SKAdsNativeAdManager alloc] init];
+skNativeManager.delegate = self;
+SKAdsRequest *request = [SKAdsRequest requestWithAdZone:*YOUR ZONE ID* andCustomParameters:params];
+[skNativeManager getAdsForRequest:request withRequestedNumberOfAds:10];
+...
+
+- (void)skNativeAdManagerDidLoad:(SKAdsNativeAdManager *)nativeAdManager {
+SKAdsNativeAd *newAd = [nativeAdManager.allNativeAds objectAtIndex:0];
+
+// Get data from `newAd` and add fields to your view
+...
+UILabel *titleLabel = [[UILabel alloc] init];
+[titleLabel setFrame:CGRectMake(10,50,300,20)];
+titleLabel.backgroundColor=[UIColor clearColor];
+titleLabel.textColor=[UIColor blackColor];
+titleLabel.userInteractionEnabled=YES;
+titleLabel.text = newAd.adTitle;
+[self.view addSubview:titleLabel];
+[titleLabel release];
+...
+
+// Add a touch recognizer to native element(s) to enable landing page access
+UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelTapped)];
+tapGestureRecognizer.numberOfTapsRequired = 1;
+[titleLabel addGestureRecognizer:tapGestureRecognizer];
+// Log the native ad impression
+
+[nativeAdManager logNativeAdImpression:newAd];
+}
+
+- (void)labelTapped {
+SKAdsNativeAd *newAd = [skNativeManager.allNativeAds objectAtIndex:0];
+[skNativeManager nativeAdWasTouched:newAd];
+}
+
+- (void)skNativeAdManager:(SKAdsNativeAdManager *)nativeAdManager didFailToReceiveAdWithError:(NSError *)error {
+NSLog(@"Native Ad Manager failed to load with the following error: %@", error.localizedDescription);
+}
+...
+
+~~~~
 
 ### Listen for Location Updates
 
@@ -219,7 +274,12 @@ If you want to allow for geo-targeting, listen for location updates:
 // start listening for location updates
 self.locationManager = [[CLLocationManager alloc] init];
 self.locationManager.delegate = self;
-[self.locationManager startMonitoringSignificantLocationChanges];
+
+// iOS 8 check
+if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+    [self.locationManager requestWhenInUseAuthorization];
+}
+[self.locationManager startUpdatingLocation];
 
 ...
 

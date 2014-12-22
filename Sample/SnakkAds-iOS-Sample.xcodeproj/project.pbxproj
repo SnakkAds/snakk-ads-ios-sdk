@@ -24,6 +24,7 @@
 		CD5CA982184D123B008B5568 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA981184D123B008B5568 /* CoreTelephony.framework */; };
 		CD5CA984184D1240008B5568 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA983184D1240008B5568 /* QuartzCore.framework */; };
 		CD5CA986184D1248008B5568 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA985184D1248008B5568 /* SystemConfiguration.framework */; };
+		CD6C174C1A48A09C009FA29E /* SnakkAdsNativeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6C174B1A48A09C009FA29E /* SnakkAdsNativeExampleViewController.m */; };
 		CD8743491851086A005FBC0A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CD8743481851086A005FBC0A /* README.md */; };
 		CDB5387518D8BEDF0054446C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB5385E18D8BEDF0054446C /* Main_iPad.storyboard */; };
 		CDB5387618D8BEDF0054446C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB5386018D8BEDF0054446C /* Main_iPhone.storyboard */; };
@@ -74,6 +75,8 @@
 		CD5CA985184D1248008B5568 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CD6C17421A421191009FA29E /* TapItMediationAdMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapItMediationAdMob.h; sourceTree = SOURCE_ROOT; };
 		CD6C17431A421191009FA29E /* TapItMediationAdMob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapItMediationAdMob.m; sourceTree = SOURCE_ROOT; };
+		CD6C174A1A48A09C009FA29E /* SnakkAdsNativeExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakkAdsNativeExampleViewController.h; sourceTree = "<group>"; };
+		CD6C174B1A48A09C009FA29E /* SnakkAdsNativeExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakkAdsNativeExampleViewController.m; sourceTree = "<group>"; };
 		CD8743481851086A005FBC0A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CDB5385F18D8BEDF0054446C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		CDB5386118D8BEDF0054446C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 				CDB5386F18D8BEDF0054446C /* SnakkAdsInterstitialExampleViewController.m */,
 				CDB5387018D8BEDF0054446C /* SnakkAdsVideoExampleViewController.h */,
 				CDB5387118D8BEDF0054446C /* SnakkAdsVideoExampleViewController.m */,
+				CD6C174A1A48A09C009FA29E /* SnakkAdsNativeExampleViewController.h */,
+				CD6C174B1A48A09C009FA29E /* SnakkAdsNativeExampleViewController.m */,
 				CDB5387218D8BEDF0054446C /* main.m */,
 				CDB5387318D8BEDF0054446C /* SKAds.bundle */,
 				CD6C17421A421191009FA29E /* TapItMediationAdMob.h */,
@@ -323,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6C174C1A48A09C009FA29E /* SnakkAdsNativeExampleViewController.m in Sources */,
 				CDB5387D18D8BEDF0054446C /* SnakkAdsBannerExampleViewController.m in Sources */,
 				CDB5387F18D8BEDF0054446C /* SnakkAdsVideoExampleViewController.m in Sources */,
 				CDB5387E18D8BEDF0054446C /* SnakkAdsInterstitialExampleViewController.m in Sources */,
