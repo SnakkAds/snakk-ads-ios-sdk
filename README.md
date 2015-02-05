@@ -1,7 +1,7 @@
 Snakk Ads iOS SDK
 ================
 
-Version 3.1
+Version 3.1.2
 
 This is Snakk's iOS SDK for Advertising. Visit http://www.snakkads.com/ for more details and to sign up.
 
