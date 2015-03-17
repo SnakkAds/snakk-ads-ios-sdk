@@ -36,6 +36,11 @@
 - (NSString *)adIconURL;
 
 /**
+ An `NSString` that contains the ad image URL for the `SKAdsNativeAd`.
+ */
+- (NSString *)adImageURL;
+
+/**
  An `NSString` that contains the ad call to action for the `SKAdsNativeAd`.
  */
 - (NSString *)adCTA;
@@ -48,7 +53,12 @@
 /**
  An `NSString` that contains the ad impression URL for the `SKAdsNativeAd`.
  */
-- (NSString *)adImpressionURL;
+- (NSString *)adImpressionURL DEPRECATED_ATTRIBUTE;
+
+/**
+ An `NSArray` that contains the ad impression URLs for the `SKAdsNativeAd`.
+ */
+- (NSArray *)adImpressionURLs;
 
 /**
  An `NSString` that contains the ad type for the `SKAdsNativeAd`.
