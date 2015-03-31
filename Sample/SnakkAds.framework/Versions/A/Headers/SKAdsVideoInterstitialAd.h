@@ -2,8 +2,7 @@
 //  SKAdsVideoInterstitialAd.h
 //  SKAds iOS SDK
 //
-//  Created by Carl Zornes on 10/29/13.
-//  Copyright (c) 2013 SKAds!. All rights reserved.
+//  Copyright (c) 2015 TapIt! by Phunware. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,6 +18,9 @@
 
 @class SKAdsVideoInterstitialAd, FullScreenVC;
 
+/**
+ A `SKAdsVideoInterstitialAdDelegate` is needed to receive notifications about video ad status.
+ */
 @protocol SKAdsVideoInterstitialAdDelegate <NSObject>
 
 @required
@@ -29,20 +31,27 @@
 
 /**
  Called when the adsLoader receives a video and is ready to play (required).
+ @param videoAd The video ad that was loaded.
  */
 - (void)skVideoInterstitialAdDidLoad:(SKAdsVideoInterstitialAd *)videoAd;
 
 /**
  Gets called when the video ad has finished playing and the screen returns to your app.
+ @param videoAd The video ad that finished playing.
  */
 - (void)skVideoInterstitialAdDidFinish:(SKAdsVideoInterstitialAd *)videoAd;
 
 /**
  Gets called if there are no ads to display.
+ @param videoAd The video ad that failed to load.
+ @param error The error string detailing why the video ad failed to play.
  */
 - (void)skVideoInterstitialAdDidFail:(SKAdsVideoInterstitialAd *)videoAd withErrorString:(NSString *)error;
 @end
 
+/**
+ `SKAdsVideoInterstitialAd` implements a standard `SKAdsVideoInterstitialAd` into your app.
+ */
 @interface SKAdsVideoInterstitialAd : NSObject <TVASTAdsLoaderDelegate,
 TVASTClickTrackingUIViewDelegate, TVASTVideoAdsManagerDelegate,
 TVASTClickThroughBrowserDelegate>
@@ -67,6 +76,7 @@ TVASTClickThroughBrowserDelegate>
 
 /**
  Instantiantes the `TVASTAdsRequest`.
+ @param request The ad request with zone information and any custom parameters.
  */
 -(void)requestAdsWithRequestObject:(TVASTAdsRequest *)request;
 
@@ -76,36 +86,38 @@ TVASTClickThroughBrowserDelegate>
 
 /**
  Instantiantes the `TVASTAdsRequest` with a specified `SKAdsVideoType`.
+ @param request The ad request with zone information and any custom parameters.
+ @param videoType The type of video being requested (all, pre-roll, mid-roll, post-roll).
  */
 -(void)requestAdsWithRequestObject:(TVASTAdsRequest *)request andVideoType:(SKAdsVideoType)videoType;
 
 /**
- An `id` that is used to identify the 'SKAdsVideoInterstitialAdDelegate' delegate.
+ An `id` used to identify the 'SKAdsVideoInterstitialAdDelegate' delegate.
  */
 @property (assign, nonatomic) id<SKAdsVideoInterstitialAdDelegate> delegate;
 
 /**
- A `TVASTVideoAdsManager` that is the manager of video ads.
+ A `TVASTVideoAdsManager` is the manager of video ads.
  */
 @property(nonatomic, retain) TVASTVideoAdsManager *videoAdsManager;
 
 /**
- A `TVASTClickTrackingUIView` that handles touch events on the video ad.
+ A `TVASTClickTrackingUIView` handles touch events on the video ad.
  */
 @property(nonatomic, retain) TVASTClickTrackingUIView *clickTrackingView;
 
 /**
- The `AVPlayer` that will display the video ad.
+ The `AVPlayer` will display the video ad.
  */
 @property (nonatomic, retain) AVPlayer *adPlayer;
 
 /**
- The `FullScreenVC` that will contain the `AVPlayer`.
+ The `FullScreenVC` will contain the `AVPlayer`.
  */
 @property (nonatomic, retain) FullScreenVC *landscapeVC;
 
 /**
- A `UIViewController` that is responsible for presenting the video ad (optional).
+ A `UIViewController` is responsible for presenting the video ad (optional).
  */
 @property (nonatomic, retain) UIViewController *presentingViewController;
 

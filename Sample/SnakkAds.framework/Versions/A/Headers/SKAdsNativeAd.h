@@ -2,12 +2,14 @@
 //  SKAdsNativeAd.h
 //  SKAds iOS SDK
 //
-//  Created by Carl Zornes on 11/20/14.
 //
 //
 
 #import <Foundation/Foundation.h>
 
+/**
+ `SKAdsNativeAd` implements a standard `SKAdsNativeAd` into your app.
+ */
 @interface SKAdsNativeAd : NSObject
 
 /**
